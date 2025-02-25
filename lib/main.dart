@@ -13,6 +13,14 @@ class Lab06 extends StatelessWidget {
     return MaterialApp(
       title: 'Advanced UI',
       home: Scaffold(
+        bottomNavigationBar: BottomNavigationBar(items: [
+          BottomNavigationBarItem(
+            icon:Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+            icon:Icon(Icons.linked_camera), label: "Camera"),
+          BottomNavigationBarItem(
+            icon:Icon(Icons.access_alarm), label: "Alarm"), 
+        ]),
           drawer: Drawer(
             child: ListView(
               children: [
