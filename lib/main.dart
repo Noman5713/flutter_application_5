@@ -13,6 +13,29 @@ class Lab06 extends StatelessWidget {
     return MaterialApp(
       title: 'Advanced UI',
       home: Scaffold(
+          drawer: Drawer(
+            child: ListView(
+              children: [
+                DrawerHeader(child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(Icons.settings,size: 25,color: Colors.black,),
+                    Icon(Icons.access_alarm_sharp,size: 25,color: Colors.blueAccent,)
+                  ],
+                )),
+                ListTile(
+                  leading: Icon(Icons.image),
+                  title: Text("Images"),
+                  onTap: () {},
+                ),
+                ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("Settings"),
+                  onTap: () {},
+                )
+              ],
+            ),
+          ),
           appBar: AppBar(
             title: Text("Advance UI"),
           ),
